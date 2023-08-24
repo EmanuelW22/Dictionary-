@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+
+    <div class="card border-primary mb-3" style="width: 30rem;">
+        <div class="card-body">
+            <h1 class="text-center">Dictionary</h1>
+            
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Enter word</label>
+                <input type="email" class="form-control" id="inputWord" placeholder="Type word">
+            </div>
+
+            <div class="col-auto text-center">
+                <button type="submit" class="btn btn-primary mb-3" id="btnWord"> Save word </button>
+            </div>
+
+            <div class="mb-3">
+                <label for="searchInput" class="form-label">Search the dictionary</label>
+                <input type="email" class="form-control" id="searchWord" placeholder="Search the dictionary">
+            </div>
+
+            <div class="col-auto text-center">
+                <button type="submit" class="btn btn-primary mb-3" id="bntSearch">Search word</button>
+            </div>
+        </div>
+        <div class="mb-3" id="messageContainer">
+            <p id="message" class="text-center"></p>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
