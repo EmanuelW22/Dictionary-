@@ -1,22 +1,20 @@
 let inputWord = document.getElementById("inputWord");
-let btnWord = document.getElementById("btnWord");
 let searchWord = document.getElementById("searchWord");
-let btnSearch = document.getElementById("bntSearch");
 let messageContainer = document.getElementById("messageContainer");
 let messageElement = document.getElementById("message");
 
 let dictionary = new Set();
 
-btnWord.addEventListener("click", function () {
+function addWord() {
     let word = inputWord.value.trim();
     if (word !== "") {
         dictionary.add(word);
         inputWord.value = "";
         showMessage(`The word "${word}" has been added to the dictionary!`);
     }
-});
+}
 
-btnSearch.addEventListener("click", function () {
+function searchWordInDictionary() {
     let wordToSearch = searchWord.value.trim();
     if (wordToSearch !== "") {
         if (dictionary.has(wordToSearch)) {
@@ -26,7 +24,7 @@ btnSearch.addEventListener("click", function () {
         }
         searchWord.value = "";
     }
-});
+}
 
 function showMessage(message) {
     messageElement.textContent = message;
